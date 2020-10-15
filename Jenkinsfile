@@ -9,7 +9,7 @@ pipeline {
             }
         }
         stage('Build Docker Image') {
-            steps {
+            steps { 
                 script {
                     app = docker.build("francis535/train-schedule")
                     app.inside {
